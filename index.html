@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- boostrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <script src="node_modules/three//build/three.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <title>Personal Web</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#" id="text1"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
+            </li>
+            <li>
+              <a class="nav-link active fw-bold" href="#about">About</a>
+            </li>
+            <li>
+              <a class="nav-link active fw-bold" href="#skills">Skills</a>
+            </li>
+            <li>
+              <a class="nav-link active fw-bold" href="#contact">Contact Me</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+    <!-- Jumbotron -->
+    <section class="jumbotron text-center">
+      <canvas id="canvas1"></canvas>
+      <!-- <img src="https://i.postimg.cc/PJkfXPS1/12.jpg" alt="Nanda Awimbi" width="200" class="rounded-circle" /> -->
+      <h2 class="display-4 text-white fw-bold">NANDA AWIMBI YAHYA PRATAMA</h2>
+      <p class="lead text-white fw-bold">IT Student's at Politechnic State of Banyuwangi</p>
+      <!-- <div class="text-uppercase text-white fw-bold" id="text1"></div> -->
+      <p>I am a <span class="typing-text"> </span></p>
+      <div>
+        <a style="background-color: #1161c9" href="#project" class="btn btn-dark px-4 mt-2">My Project</a>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,96L60,133.3C120,171,240,245,360,234.7C480,224,600,128,720,106.7C840,85,960,139,1080,160C1200,181,1320,171,1380,165.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+    <!-- <section id="about">
+      <div class="container" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row text-center">
+          <div class="col fw-bold">
+            <h2>About Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-7">
+            <table>
+              <tr>
+                <th>Nama</th>
+                <td>:</td>
+                <td style="padding-left: 10px">Nanda Awimbi Yahya Pratama</td>
+              </tr>
+              <tr>
+                <th>TTL</th>
+                <td>:</td>
+                <td style="padding-left: 10px">Kediri, 07 Januari 2002</td>
+              </tr>
+              <th>Alamat</th>
+              <td>:</td>
+              <td style="padding-left: 10px">Ds.Kedungombo, Kec.Tanjunganom Kab.Ngnjuk</td>
+              <tr>
+                <th>Hobi</th>
+                <td>:</td>
+                <td style="padding-left: 10px">Music & Playing Game</td>
+              </tr>
+              <tr>
+                <th>Jenis Kelamin</th>
+                <td>:</td>
+                <td style="padding-left: 10px">Laki-Laki</td>
+              </tr>
+              <tr>
+                <th>No.Tlp</th>
+                <td>:</td>
+                <td style="padding-left: 10px">089676298218</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>:</td>
+                <td style="padding-left: 10px">nandaawimbi9621@gmail.com</td>
+              </tr>
+            </table>
+          </div>
+          <div class="col-5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam vitae enim ex voluptates eveniet? Tempora, nisi! Dicta corrupti praesentium debitis est fuga facere iure odit.</p>
+          </div>
+        </div>
+      </div> -->
+    <section id="about">
+      <div class="container" data-aos="zoom-in" data-aos-duration="3000">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2 class="fw-bold">About Me</h2>
+          </div>
+        </div>
+        <div class="rownded row justify-content-center fs-5">
+          <div class="col-md-4">
+            <!-- <img src="img/about.jpeg" alt="about" class="rounded-circle img-thumbnail"> -->
+            <img src="https://i.postimg.cc/59793yLm/IMG202104241623231.jpg" alt="about" class="rounded-circle img-thumbnail" />
+          </div>
+          <div class="col-md-4">
+            <div class="row">
+              <!-- <h2 class="text-color" id="judul">Hallo!!</h2> -->
+              <h2 class="text-color" id="judul">Hiii I'am NANDA AWIMBI YAHYA</h2>
+              <span class="pt-1 pb-3">A student activist</span>
+            </div>
+            <div class="col" id="kontent">
+              <p class="">
+                Introducing, my name is Nanda Awimbi Yahya Pratama. You can call me Nanda/ Wimbi/ Bimbim. I was born in Kediri on 07-January-2002. I come from Nganjuk Regency. I'm currently in my 4th semester of college. Come on, follow my
+                social media, so you can know my daily activities
+                <i class="bi bi-emoji-smile"></i>
+              </p>
+              <a class="p-2 text-dark" aria-current="page" href="https://api.whatsapp.com/send/?phone=6289676298218&text&app_absent=0"><i class="bi bi-whatsapp"></i></a>
+              <a class="p-2 text-dark" href="http://instagram.com/nandaawimbi"><i class="bi bi-instagram"></i></a>
+              <a class="p-2 text-dark" href="https://www.facebook.com/nanda.awimbi/"><i class="bi bi-facebook"></i></a>
+              <a class="p-2 text-dark" href="https://github.com/NandaAwimbi07"><i class="bi bi-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#abc1e6"
+          fill-opacity="1"
+          d="M0,256L60,218.7C120,181,240,107,360,112C480,117,600,203,720,213.3C840,224,960,160,1080,128C1200,96,1320,96,1380,96L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- Akhir About -->
+
+    <!-- Skill -->
+    <section id="skills">
+      <div class="container" data-aos="flip-left" data-aos-duration="3000">
+        <div class="row text-center text-black fw-bold">
+          <div class="col">
+            <h2 class="fw-bold">My Skills</h2>
+          </div>
+        </div>
+        <div class="row text-black fw-bold">
+          <div class="col-md-7">
+            <div class="home-img text-center">
+              <img src="https://i.postimg.cc/bY7HwwcP/skill.png" width="300" alt="" class="mw-100" />
+            </div>
+            <canvas id="skil"></canvas>
+          </div>
+          <div class="col-md-5">
+            <p>HTML</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <p>CSS</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <p>JavaScript</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <p>Mobile Developer</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+            </div>
+            <p>Php</p>
+            <div class="progress">
+              <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">30%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#f3f4f5"
+          fill-opacity="1"
+          d="M0,96L48,128C96,160,192,224,288,208C384,192,480,96,576,74.7C672,53,768,107,864,133.3C960,160,1056,160,1152,165.3C1248,171,1344,181,1392,186.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+      <script>
+        // let width = 200;
+        // let height = 200;
+        var scene1 = new THREE.Scene();
+        scene1.background = new THREE.Color("white");
+
+        const canvas2 = document.getElementById("skil");
+        var cam = new THREE.PerspectiveCamera(30, innerWidth / innerHeight, 1, 50);
+        var render = new THREE.WebGLRenderer({ canvas2 });
+
+        cam.position.z = 7;
+        //Membuat box1
+        var box = new THREE.BoxGeometry(1, 1, 1);
+
+        var boxMat = new THREE.MeshFaceMaterial([
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load("https://i.postimg.cc/wMrm4j7q/images-26.jpg"),
+          }),
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load("https://i.postimg.cc/7LSnC0bg/images-25.jpg"),
+          }),
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load(""),
+          }),
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load(""),
+          }),
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load("https://i.postimg.cc/PqnmkJKN/images-4.png"),
+          }),
+          new THREE.MeshBasicMaterial({
+            map: new THREE.TextureLoader().load("https://i.postimg.cc/GpCTgYLd/download.png"),
+          }),
+        ]);
+        var boxMesh = new THREE.Mesh(box, boxMat);
+        boxMesh.position.set(0, 0, 0);
+        scene1.add(boxMesh);
+
+        render.setSize(innerWidth, innerHeight);
+        document.body.appendChild(render.domElement);
+
+        window.addEventListener("resize", function () {
+          render.setSize(this.window.innerWidth, this.window.innerHeight);
+          cam.aspect = this.window.innerWidth / this.window.innerHeight;
+          cam.updateProjectionMatrix();
+        });
+
+        //Looping animation
+        function animasi3d() {
+          requestAnimationFrame(animasi3d);
+
+          boxMesh.rotation.y += 0.01;
+          render.render(scene1, cam);
+        }
+        animasi3d();
+        //
+      </script>
+    </section>
+    <!-- End Skill -->
+
+    <!-- Project -->
+    <section id="project">
+      <div class="container" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row text-center">
+          <div class="col fw-bold">
+            <h2 class="fw-bold">My Projects</h2>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="https://codepen.io/nandaawimbi07/full/dyJrxdd">
+                <img src="https://i.postimg.cc/vHGQKz9P/Screenshot-2022-05-25-183217.png" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center fw-bold text-white">Menggambar Menggunakan JavaScript</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="https://codepen.io/nandaawimbi07/full/KKQgdym">
+                <img src="https://i.postimg.cc/0yF0kZYv/Screenshot-2022-05-25-183845.png" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center fw-bold text-white">Membuat Objek 3D</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="https://codepen.io/nandaawimbi07/full/xxYEMNL">
+                <img src="https://i.postimg.cc/SsF6bsWf/Screenshot-2022-05-25-184650.png" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center fw-bold text-white">Project UAS GRAFIKA</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="https://github.com/NandaAwimbi07/portofolio">
+                <img src="https://i.postimg.cc/8CP0qZmb/Whats-App-Image-2022-05-25-at-18-55-22.jpg" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center fw-bold text-white">Project APP Portofolio Flutter</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="https://github.com/akuutauf/e-commerce">
+                <img src="https://i.postimg.cc/c6y0MMmy/Screenshot-2022-05-25-194937.png" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center fw-bold text-white">Proggess Project E-Commerce</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <a href="">
+                <img src="https://i.postimg.cc/g2M0Vc0P/project3.jpg" class="card-img-top" alt="project1" />
+                <div class="card-body">
+                  <p class="card-text text-center">Cooming Soon</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ffffff"
+          fill-opacity="1"
+          d="M0,256L60,229.3C120,203,240,149,360,154.7C480,160,600,224,720,250.7C840,277,960,267,1080,266.7C1200,267,1320,277,1380,282.7L1440,288L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir project -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="3000">
+        <div class="row text-center mb-3">
+          <div class="col fw-bold">
+            <h2 style="padding-top: 70px">Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="Nama Lengkap">Nama</label>
+                <input type="text" class="form-control" id="name" placeholder="masukkan Nama Anda" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="masukkan Email Anda" />
+              </div>
+              <div class="mb-3">
+                <label for="name" class="Nama Lengkap">No.Tlp</label>
+                <input type="text" class="form-control" id="name" placeholder="Masukkan No.tlp Anda" />
+              </div>
+
+              <div class="form-group">
+                <label for="pesan">Pesan</label>
+                <textarea class="form-control" rows="10" placeholder="Masukkan pesan anda"></textarea>
+              </div>
+              <button style="background-color: #1161c9" type="submit" class="btn btn-dark mt-2">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#1464ec"
+          fill-opacity="1"
+          d="M0,192L60,181.3C120,171,240,149,360,165.3C480,181,600,235,720,261.3C840,288,960,288,1080,266.7C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
+        ></path>
+      </svg>
+    </section>
+    <!-- akhir Contact -->
+
+    <!-- Footer -->
+    <footer style="background-color: #1464ec" class="text-white text-center pb-5">
+      <p>© Copyright 2022 | Made With <i class="bi-heart-fill text-danger"></i> By <a href="https://api.whatsapp.com/send/?phone=6289676298218&text&app_absent=0" class="text-white fw-bold">Nanda Awimbi</a></p>
+      <div class="col-sm-12">
+        <a href="http://instagram.com/nandaawimbi" class="btn btn-danger"> <i class="bi bi-person-fill"></i> Follow My Instagram </a>
+      </div>
+    </footer>
+
+    <!-- Akhir Footer -->
+    <script type="Text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+    <script>
+      // THREEJS
+      let width = 200;
+      let height = 200;
+
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color("#1763b9");
+      const camera = new THREE.PerspectiveCamera(20, width / height, 0.1, 20);
+      const canvas = document.getElementById("canvas1");
+      const renderer = new THREE.WebGLRenderer({ canvas });
+
+      renderer.setSize(width, height);
+      camera.position.z = 5;
+
+      // /* Geometri Material */
+      const geo = new THREE.BoxGeometry(1, 1, 1);
+
+      // /* Custom Material */
+      const ATexture = new THREE.TextureLoader().load("https://i.postimg.cc/PJkfXPS1/12.jpg");
+
+      const material = new THREE.MeshBasicMaterial({
+        map: ATexture,
+      });
+      let mesh = new THREE.Mesh(geo, material);
+      scene.add(mesh);
+
+      let pageX = 0.5;
+      let pageY = 0.5;
+
+      document.body.addEventListener("mousemove", (event) => {
+        pageX = event.pageX / window.innerHeight;
+        pageY = event.pageY / window.innerHeight;
+      });
+      window.addEventListener("resize", function () {
+        renderer.setSize(width, height);
+        camera.aspect = width / height;
+        camera.updateProjectionMatrix();
+      });
+
+      function update() {
+        mesh.rotation.y = (pageY - 0.5) * 2;
+        mesh.rotation.x = (pageX - 0.5) * 2;
+
+        requestAnimationFrame(update);
+        renderer.render(scene, camera);
+      }
+      update();
+    </script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script>
+      // gsap.from('.jumbotron img', { duration : 1, rotateY :360, opacity: 0, ease : 'bounce'});
+      gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+      gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+      gsap.from(".lead", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "start" });
+      gsap.from(".rownded", { duration: 3, x: -50, y: "-100%", opacity: 2, delay: 0.5, ease: "back" });
+      // gsap.from('.lead', {delay: 4.0});
+    </script>
+
+    <script src="script.js"></script>
+    <!-- Akhir Contact -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
