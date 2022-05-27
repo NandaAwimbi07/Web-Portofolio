@@ -1,6 +1,6 @@
-/* body {
-  min-height: 2000px;
-} */
+body {
+  overflow-x: hidden;
+}
 
 .jumbotron {
   padding-top: 6rem;
@@ -42,4 +42,8 @@ section {
 
 .card {
   background-color: #1763b9;
+}
+
+#animasi2D {
+  background-color: blue;
 }
