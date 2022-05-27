@@ -19,7 +19,6 @@ var typed = new Typed(".typing-text", {
   typeSpeed: 150,
 });
 
-// import * as THREE from "https://cdn.skypack.dev/three@0.122.0/build/three.module.js";
 let canvasKita = document.getElementById("2dimensi");
 canvasKita.width = 1355;
 canvasKita.height = 250;

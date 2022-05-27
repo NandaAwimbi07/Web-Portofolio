@@ -8,7 +8,7 @@ body {
   /* background-size: cover; */
 
   background-attachment: fixed;
-  background: #1763b9;
+  background: grey;
 }
 
 /* .jumbotron img {
@@ -18,14 +18,14 @@ body {
 } */
 
 #skills {
-  background-color: #abc1e6;
+  background-color: grey;
 }
 
 #contact {
   background-color: #ffffff;
 }
 #project {
-  background-color: #abc1e6;
+  background-color: grey;
 }
 
 section {
@@ -40,10 +40,10 @@ section {
   line-height: 2;
 }
 
-.card {
-  background-color: #1763b9;
-}
+/* .card {
+  background-color: blue;
+} */
 
 #animasi2D {
-  background-color: blue;
+  background-color: black;
 }
